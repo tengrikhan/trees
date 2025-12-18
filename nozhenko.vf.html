@@ -1,0 +1,1266 @@
+﻿<!--saved from url=(0016)http://localhost-->
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<style type="text/css">
+			* { padding: 0; margin: 0; border: 0; }
+			.modal { display: none; position: fixed; z-index: 1; padding-top: 2%; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); }
+			.modal-content { background-color: #fefefe; margin: auto; padding: 5px 0px 20px 20px; border: 1px solid #888; width: 748px; height: 87%; min-height: 350px; }
+			#modalContent { border: 0; width: 100%; height: 98%; }
+			.modal-frame { border: 0; width: 100%; height: 99%; }
+			.close { color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; margin-right: 10px; }
+			.close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; }
+			.gbtn { float: left; margin-top: 8px; opacity: 0.7; width: 26px; height: 26px; background: no-repeat; }
+			.back { background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNMTIgMkM2LjQ3NyAyIDIgNi40NzcgMiAxMnM0LjQ3NyAxMCAxMCAxMCAxMC00LjQ3NyAxMC0xMFMxNy41MjMgMiAxMiAyem0wIDEuNWE4LjUgOC41IDAgMSAxIDAgMTcgOC41IDguNSAwIDAgMSAwLTE3em0uMzUzIDQuMDUzLS4wNzMtLjA4NGEuNzUuNzUgMCAwIDAtLjk3Ni0uMDcybC0uMDg0LjA3My00IDRhLjc1Ljc1IDAgMCAwLS4wNzIuOTc2bC4wNzIuMDg0IDQuMDAyIDRhLjc1Ljc1IDAgMCAwIDEuMTMzLS45NzZsLS4wNzMtLjA4NC0yLjcyMi0yLjcyaDYuNjkxYS43NS43NSAwIDAgMCAuNzQ0LS42NDhMMTcgMTJhLjc1Ljc1IDAgMCAwLS42NDgtLjc0M2wtLjEwMi0uMDA3SDkuNTZsMi43Mi0yLjcyYS43NS43NSAwIDAgMCAuMDczLS45NzZsLS4wNzMtLjA4NHoiIGZpbGw9IiMxNzRDNzIiLz48L3N2Zz4="); }
+			.tree { margin-left: 12px; background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI4IDI4IiBmaWxsPSJub25lIj48cGF0aCBkPSJNMTQgMmE0LjI1IDQuMjUgMCAwIDAtLjc1IDguNDM0djMuMDY4aC00LjVhMi4yNSAyLjI1IDAgMCAwLTIuMjUgMi4yNXYxLjgxNmE0LjI1IDQuMjUgMCAxIDAgMS41LS4wMDJWMTUuNzVhLjc1Ljc1IDAgMCAxIC43NS0uNzVoMTAuNWEuNzUuNzUgMCAwIDEgLjc1Ljc1djEuODE2YTQuMjUxIDQuMjUxIDAgMSAwIDEuNSAwVjE1Ljc1YTIuMjUgMi4yNSAwIDAgMC0yLjI1LTIuMjVoLTQuNXYtMy4wNjhBNC4yNTEgNC4yNTEgMCAwIDAgMTQgMS45OTh6bS0yLjc1IDQuMjVhMi43NSAyLjc1IDAgMSAxIDUuNSAwIDIuNzUgMi43NSAwIDAgMS01LjUgMHptOS41IDEyLjc1MmEyLjc1IDIuNzUgMCAxIDEgMCA1LjUgMi43NSAyLjc1IDAgMCAxIDAtNS41eiIgZmlsbD0iIzE3NEM3MiIvPjwvc3ZnPg=="); }
+			.tree:hover, .tree:focus,.back:hover, .back:focus { cursor: pointer; opacity: 1;  }
+			.s0 { stroke:none;fill:#92DDF9; }
+			.s1 { stroke:#707070;stroke-width:1px;stroke-linecap:square;fill:none; }
+			.s2 { stroke:none;fill:#FBD27A; }
+			.s3 { stroke:none;fill:#FFFFFF; }
+			.s4 { font-family:Verdana;font-size:9px;fill:#000000; }
+			.s5 { stroke:#707070;stroke-width:2px;stroke-linecap:square;fill:#707070; }
+			.s6 { stroke:#174C72;stroke-width:2px;stroke-linecap:square;fill:#174C72; }
+			.s7 { stroke:#707070;stroke-width:2px;stroke-linecap:square;fill:none; }
+			.s8 { stroke:none;fill:#C4C4C4; }
+			.s9 { stroke:none;fill:#E8E8E8; }
+			.s10 { font-family:Verdana;font-size:11px;fill:#000000; }
+			.s11 { stroke:none;fill:#FFF7E5;fill-opacity:0.50; }
+			.s12 { font-family:Verdana;font-size:13px;fill:#000000; }
+			.po { cursor: pointer; }
+			.sh { filter: drop-shadow(3px 5px 2px rgba(0,0,0,0.4)); }
+			.da { stroke-dasharray:4,4; }
+			.rtl { direction: rtl; }
+			text { white-space: pre; }
+		</style>
+	</head>
+	<body>
+		<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="950" height="3590" id="svg0" data-root="g1304">
+			<rect id="rect8" class="s3" x="0" y="0" width="950" height="3590" />
+			<g id="g1298">
+				<rect id="rect0" class="s11" x="0" y="3399" width="950" height="191" />
+				<rect id="rect1" class="s11" x="0" y="2893" width="950" height="269" />
+				<rect id="rect2" class="s11" x="0" y="2433" width="950" height="237" />
+				<rect id="rect3" class="s11" x="0" y="1987" width="950" height="223" />
+				<rect id="rect4" class="s11" x="0" y="1527" width="950" height="223" />
+				<rect id="rect5" class="s11" x="0" y="1067" width="950" height="237" />
+				<rect id="rect6" class="s11" x="0" y="621" width="950" height="223" />
+				<rect id="rect7" class="s11" x="0" y="189" width="950" height="209" />
+				<g id="g1299" transform="translate(25,10)">
+					<g id="g1300">
+						<g id="g1347" transform="translate(3,2007)">
+							<g id="g1348">
+								<g id="g1349">
+									<path id="l28" class="s5" d="M37 149v74" />
+									<g id="g1350" class="po" data-id="426">
+										<path id="p0" class="s0 sh" d="M0,0h75v149h-75Z" />
+										<g id="g1501">
+											<image id="i0" xlink:href="./nozhenko.vf.html.files/img/i0.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t0" class="s10" x="12" y="113">Ноженко</text>
+											<text id="t1" class="s10" x="13" y="127">Василий</text>
+											<text id="t2" class="s10" x="24" y="141">? – ?</text>
+										</g>
+										<path id="p1" class="s1" d="M0,0h75v149h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1343" transform="translate(0,2230)">
+							<g id="g1344">
+								<g id="g1345">
+									<path id="l24" class="s5" d="M40 163v48" />
+									<g id="g1346" class="po" data-id="89">
+										<path id="p2" class="s0 sh" d="M0,0h81v163h-81Z" />
+										<g id="g1502">
+											<image id="i1" xlink:href="./nozhenko.vf.html.files/img/i1.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t3" class="s10" x="15" y="113">Ноженко</text>
+											<text id="t4" class="s10" x="12" y="127">Афанасий</text>
+											<text id="t5" class="s10" x="7" y="141">Васильевич</text>
+											<text id="t6" class="s10" x="5" y="155">1849 – 1919</text>
+										</g>
+										<path id="p3" class="s1" d="M0,0h81v163h-81Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1339" transform="translate(49,2453)">
+							<path id="l27" class="s5" d="M-9 -12h114" />
+							<g id="g1340">
+								<g id="g1341">
+									<path id="l26" class="s5" d="M43 -12v12" />
+									<path id="l20" class="s5" d="M43 163v62" />
+									<g id="g1342" class="po" data-id="9">
+										<path id="p4" class="s0 sh" d="M0,0h86v163h-86Z" />
+										<g id="g1503">
+											<image id="i2" xlink:href="./nozhenko.vf.html.files/img/i2.jpeg" x="5" y="0" width="75" height="100" />
+											<text id="t7" class="s10" x="18" y="113">Ноженко</text>
+											<text id="t8" class="s10" x="29" y="127">Иван</text>
+											<text id="t9" class="s10" x="5" y="141">Афанасьевич</text>
+											<text id="t10" class="s10" x="7" y="155">1888 – 1947</text>
+										</g>
+										<path id="p5" class="s1" d="M0,0h86v163h-86Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1335" transform="translate(166,2690)">
+							<path id="l23" class="s5" d="M-74 -12h228" />
+							<g id="g1336">
+								<g id="g1337">
+									<path id="l22" class="s5" d="M40 -12v12" />
+									<path id="l16" class="s5" d="M40 163v48" />
+									<g id="g1338" class="po" data-id="8">
+										<path id="p10" class="s0 sh" d="M0,0h81v163h-81Z" />
+										<g id="g1506">
+											<image id="i5" xlink:href="./nozhenko.vf.html.files/img/i5.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t16" class="s10" x="15" y="113">Ноженко</text>
+											<text id="t17" class="s10" x="22" y="127">Федор</text>
+											<text id="t18" class="s10" x="13" y="141">Иванович</text>
+											<text id="t19" class="s10" x="5" y="155">1923 – 2005</text>
+										</g>
+										<path id="p11" class="s1" d="M0,0h81v163h-81Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1301" transform="translate(373,2913)">
+							<path id="l19" class="s5" d="M-167 -12h453" />
+							<g id="g1302">
+								<g id="g1303">
+									<path id="l18" class="s5" d="M60 -12v20" />
+									<path id="l0" class="s5" d="M60 201v56" />
+									<g id="g1304" class="po" data-id="69">
+										<path id="p22" class="s0 sh" d="M8,35c0,-3.8 3,-3.9 7,-3.9 4,0 8.4,-2.1 7.8,-6.2 -0.2,-1.1 -1.1,-3.3 -2.1,-4.2 1,1 3.3,1.8 4.4,2.1 3.9,0.8 5.9,-3.2 5.9,-7.1 0,-3.9 0,-7.7 4,-7.7h17c6,0 8,-2 8,-8 0,6 2,8 8,8h18c3.8,0 3.9,3 3.9,7 0,4 2.1,8.4 6.2,7.8 1.1,-0.2 3.3,-1.1 4.2,-2.1 -1,1 -1.8,3.3 -2.1,4.4 -0.8,3.9 3.2,5.9 7.1,5.9 3.9,0 7.7,0 7.7,4v61c0,6 2,8 8,8 -6,0 -8,2 -8,8v62c0,3.8 -3,3.9 -7,3.9 -4,0 -8.4,2.1 -7.8,6.2 0.2,1.1 1.1,3.3 2.1,4.2 -1,-1 -3.3,-1.8 -4.4,-2.1 -3.9,-0.8 -5.9,3.2 -5.9,7.1 0,3.9 0,7.7 -4,7.7h-18c-6,0 -8,2 -8,8 0,-6 -2,-8 -8,-8h-17c-3.8,0 -3.9,-3 -3.9,-7 0,-4 -2.1,-8.4 -6.2,-7.8 -1.1,0.2 -3.3,1.1 -4.2,2.1 1,-1 1.8,-3.3 2.1,-4.4 0.8,-3.9 -3.2,-5.9 -7.1,-5.9 -3.9,0 -7.7,0 -7.7,-4v-62c0,-6 -2,-8 -8,-8 6,0 8,-2 8,-8Z" />
+										<clipPath id="cp22">
+											<use xlink:href="#p22" />
+										</clipPath>
+										<g id="g1512" clip-path="url(#cp22)">
+											<image id="i11" xlink:href="./nozhenko.vf.html.files/img/i11.jpeg" x="23" y="23" width="75" height="100" />
+											<text id="t38" class="s10" x="35" y="136">Ноженко</text>
+											<text id="t39" class="s10" x="36" y="150">Виталий</text>
+											<text id="t40" class="s10" x="29" y="164">Федорович</text>
+											<text id="t41" class="s10" x="46" y="178">1953</text>
+										</g>
+										<path id="p23" class="s1" d="M8,35c0,-3.8 3,-3.9 7,-3.9 4,0 8.4,-2.1 7.8,-6.2 -0.2,-1.1 -1.1,-3.3 -2.1,-4.2 1,1 3.3,1.8 4.4,2.1 3.9,0.8 5.9,-3.2 5.9,-7.1 0,-3.9 0,-7.7 4,-7.7h17c6,0 8,-2 8,-8 0,6 2,8 8,8h18c3.8,0 3.9,3 3.9,7 0,4 2.1,8.4 6.2,7.8 1.1,-0.2 3.3,-1.1 4.2,-2.1 -1,1 -1.8,3.3 -2.1,4.4 -0.8,3.9 3.2,5.9 7.1,5.9 3.9,0 7.7,0 7.7,4v61c0,6 2,8 8,8 -6,0 -8,2 -8,8v62c0,3.8 -3,3.9 -7,3.9 -4,0 -8.4,2.1 -7.8,6.2 0.2,1.1 1.1,3.3 2.1,4.2 -1,-1 -3.3,-1.8 -4.4,-2.1 -3.9,-0.8 -5.9,3.2 -5.9,7.1 0,3.9 0,7.7 -4,7.7h-18c-6,0 -8,2 -8,8 0,-6 -2,-8 -8,-8h-17c-3.8,0 -3.9,-3 -3.9,-7 0,-4 -2.1,-8.4 -6.2,-7.8 -1.1,0.2 -3.3,1.1 -4.2,2.1 1,-1 1.8,-3.3 2.1,-4.4 0.8,-3.9 -3.2,-5.9 -7.1,-5.9 -3.9,0 -7.7,0 -7.7,-4v-62c0,-6 -2,-8 -8,-8 6,0 8,-2 8,-8Z" />
+										<path id="p24" class="s1" d="M14.3,12.8 a2.3,2.3 0 0 1 2.5,1.9 26.7,26.7 0 0 0 1.2,3.4 19.9,19.9 0 0 0 -3.4,-0.8 2.3,2.3 0 0 1 -2.2,-2.1 2.2,2.2 0 0 1 1.9,-2.4 m4,13.2 c-0.5,1 -2.9,1.9 -4.7,0.6 -1.8,-1.3 -1.6,-3.4 -0.6,-5 1.6,-2.6 5.8,-2.6 8.2,-0.5 -2.8,-2.6 -2.1,-7.9 1.1,-9.1 1.8,-0.7 3.9,-0.4 4.9,1.6 1,2 -0.3,4.2 -1.5,4.5" />
+										<path id="p25" class="s1" d="M108.2,14.3 a2.3,2.3 0 0 1 -1.9,2.5 26.7,26.7 0 0 0 -3.4,1.2 19.9,19.9 0 0 0 0.8,-3.4 2.3,2.3 0 0 1 2.1,-2.2 2.2,2.2 0 0 1 2.4,1.9 m-13.2,4 c-1,-0.5 -1.9,-2.9 -0.6,-4.7 1.3,-1.8 3.4,-1.6 5,-0.6 2.6,1.6 2.6,5.8 0.5,8.2 2.6,-2.8 7.9,-2.1 9.1,1.1 0.7,1.8 0.4,3.9 -1.6,4.9 -2,1 -4.2,-0.3 -4.5,-1.5" />
+										<path id="p26" class="s1" d="M106.7,196.2 a-2.3,-2.3 0 0 1 -2.5,-1.9 -26.7,-26.7 0 0 0 -1.2,-3.4 -19.9,-19.9 0 0 0 3.4,0.8 -2.3,-2.3 0 0 1 2.2,2.1 -2.2,-2.2 0 0 1 -1.9,2.4 m-4,-13.2 c0.5,-1 2.9,-1.9 4.7,-0.6 1.8,1.3 1.6,3.4 0.6,5 -1.6,2.6 -5.8,2.6 -8.2,0.5 2.8,2.6 2.1,7.9 -1.1,9.1 -1.8,0.7 -3.9,0.4 -4.9,-1.6 -1,-2 0.3,-4.2 1.5,-4.5" />
+										<path id="p27" class="s1" d="M12.8,194.7 a2.3,2.3 0 0 1 1.9,-2.5 26.7,26.7 0 0 0 3.4,-1.2 19.9,19.9 0 0 0 -0.8,3.4 2.3,2.3 0 0 1 -2.1,2.2 2.2,2.2 0 0 1 -2.4,-1.9 m13.2,-4 c1,0.5 1.9,2.9 0.6,4.7 -1.3,1.8 -3.4,1.6 -5,0.6 -2.6,-1.6 -2.6,-5.8 -0.5,-8.2 -2.6,2.8 -7.9,2.1 -9.1,-1.1 -0.7,-1.8 -0.4,-3.9 1.6,-4.9 2,-1 4.2,0.3 4.5,1.5" />
+									</g>
+								</g>
+								<g id="g1333" transform="translate(143,23)">
+									<path id="l1" class="s5" d="M41 163v71" />
+									<g id="g1334" class="po" data-id="83">
+										<path id="p28" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h62c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-62c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp28">
+											<use xlink:href="#p28" />
+										</clipPath>
+										<g id="g1513" clip-path="url(#cp28)">
+											<image id="i12" xlink:href="./nozhenko.vf.html.files/img/i12.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t42" class="s10" x="16" y="113">Ноженко</text>
+											<text id="t43" class="s10" x="5" y="127">(Николаева)</text>
+											<text id="t44" class="s10" x="21" y="141">Галина</text>
+											<text id="t45" class="s10" x="27" y="155">1953</text>
+										</g>
+										<path id="p29" class="s1" d="M0,10c0,-5 5,-10 10,-10h62c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-62c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1305" transform="translate(296,3182)">
+							<path id="l4" class="s5" d="M135 -12h128" />
+							<g id="g1306">
+								<path id="l6" class="s5" d="M86 74v151" />
+								<path id="l5" class="s6" d="M75 74h22" />
+								<g id="g1319">
+									<g id="g1320" class="po" data-id="341">
+										<path id="p30" class="s0 sh" d="M0,0h75v149h-75Z" />
+										<g id="g1514">
+											<image id="i13" xlink:href="./nozhenko.vf.html.files/img/i13.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t46" class="s10" x="7" y="113">Сергиенко</text>
+											<text id="t47" class="s10" x="7" y="127">Александр</text>
+											<text id="t48" class="s10" x="23" y="141">1971</text>
+										</g>
+										<path id="p31" class="s1" d="M0,0h75v149h-75Z" />
+									</g>
+								</g>
+								<g id="g1307" transform="translate(97,0)">
+									<path id="l2" class="s5" d="M38 -12v12" />
+									<g id="g1308" class="po" data-id="141">
+										<path id="p32" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h56c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-56c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp32">
+											<use xlink:href="#p32" />
+										</clipPath>
+										<g id="g1515" clip-path="url(#cp32)">
+											<image id="i14" xlink:href="./nozhenko.vf.html.files/img/i14.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t49" class="s10" x="13" y="113">Ноженко</text>
+											<text id="t50" class="s10" x="14" y="127">Наталья</text>
+											<text id="t51" class="s10" x="5" y="141">Витальевна</text>
+											<text id="t52" class="s10" x="24" y="155">1973</text>
+										</g>
+										<path id="p33" class="s1" d="M0,10c0,-5 5,-10 10,-10h56c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-56c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+							<g id="g1321" transform="translate(225,0)">
+								<path id="l12" class="s5" d="M88 81v144" />
+								<path id="l11" class="s6" d="M77 81h22" />
+								<g id="g1322">
+									<path id="l3" class="s5" d="M38 -12v12" />
+									<g id="g1323" class="po" data-id="138">
+										<path id="p40" class="s0 sh" d="M0,0h77v163h-77Z" />
+										<g id="g1519">
+											<image id="i18" xlink:href="./nozhenko.vf.html.files/img/i18.jpeg" x="1" y="0" width="75" height="100" />
+											<text id="t62" class="s10" x="13" y="113">Ноженко</text>
+											<text id="t63" class="s10" x="17" y="127">Андрей</text>
+											<text id="t64" class="s10" x="5" y="141">Витальевич</text>
+											<text id="t65" class="s10" x="24" y="155">1980</text>
+										</g>
+										<path id="p41" class="s1" d="M0,0h77v163h-77Z" />
+									</g>
+								</g>
+								<g id="g1331" transform="translate(99,0)">
+									<g id="g1332" class="po" data-id="329">
+										<path id="p42" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h57c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-57c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp42">
+											<use xlink:href="#p42" />
+										</clipPath>
+										<g id="g1520" clip-path="url(#cp42)">
+											<image id="i19" xlink:href="./nozhenko.vf.html.files/img/i19.jpeg" x="1" y="0" width="75" height="100" />
+											<text id="t66" class="s10" x="13" y="113">Ноженко</text>
+											<text id="t67" class="s10" x="12" y="127">(Немцев)</text>
+											<text id="t68" class="s10" x="21" y="141">Елена</text>
+											<text id="t69" class="s10" x="5" y="155">Валерьевна</text>
+											<text id="t70" class="s10" x="24" y="169">1981</text>
+										</g>
+										<path id="p43" class="s1" d="M0,10c0,-5 5,-10 10,-10h57c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-57c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1309" transform="translate(258,3419)">
+							<path id="l10" class="s5" d="M37 -12h174" />
+							<g id="g1310">
+								<g id="g1311">
+									<path id="l7" class="s5" d="M37 -12v12" />
+									<g id="g1312" class="po" data-id="342">
+										<path id="p34" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp34">
+											<use xlink:href="#p34" />
+										</clipPath>
+										<g id="g1516" clip-path="url(#cp34)">
+											<image id="i15" xlink:href="./nozhenko.vf.html.files/img/i15.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t53" class="s10" x="7" y="113">Сергиенко</text>
+											<text id="t54" class="s10" x="8" y="127">Анастасия</text>
+											<text id="t55" class="s10" x="23" y="141">1994</text>
+										</g>
+										<path id="p35" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+							<g id="g1313" transform="translate(87,0)">
+								<g id="g1314">
+									<path id="l8" class="s5" d="M37 -12v12" />
+									<g id="g1315" class="po" data-id="343">
+										<path id="p36" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp36">
+											<use xlink:href="#p36" />
+										</clipPath>
+										<g id="g1517" clip-path="url(#cp36)">
+											<image id="i16" xlink:href="./nozhenko.vf.html.files/img/i16.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t56" class="s10" x="7" y="113">Сергиенко</text>
+											<text id="t57" class="s10" x="17" y="127">Галина</text>
+											<text id="t58" class="s10" x="23" y="141">1995</text>
+										</g>
+										<path id="p37" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+							<g id="g1316" transform="translate(174,0)">
+								<g id="g1317">
+									<path id="l9" class="s5" d="M37 -12v12" />
+									<g id="g1318" class="po" data-id="344">
+										<path id="p38" class="s0 sh" d="M0,0h75v149h-75Z" />
+										<g id="g1518">
+											<image id="i17" xlink:href="./nozhenko.vf.html.files/img/i17.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t59" class="s10" x="7" y="113">Сергиенко</text>
+											<text id="t60" class="s10" x="7" y="127">Александр</text>
+											<text id="t61" class="s10" x="23" y="141">2010</text>
+										</g>
+										<path id="p39" class="s1" d="M0,0h75v149h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1324" transform="translate(529,3419)">
+							<path id="l15" class="s5" d="M37 -12h87" />
+							<g id="g1325">
+								<g id="g1326">
+									<path id="l13" class="s5" d="M37 -12v12" />
+									<g id="g1327" class="po" data-id="333">
+										<path id="p44" class="s0 sh" d="M0,0h75v149h-75Z" />
+										<g id="g1521">
+											<image id="i20" xlink:href="./nozhenko.vf.html.files/img/i20.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t71" class="s10" x="12" y="113">Ноженко</text>
+											<text id="t72" class="s10" x="7" y="127">Владислав</text>
+											<text id="t73" class="s10" x="23" y="141">2001</text>
+										</g>
+										<path id="p45" class="s1" d="M0,0h75v149h-75Z" />
+									</g>
+								</g>
+							</g>
+							<g id="g1328" transform="translate(87,0)">
+								<g id="g1329">
+									<path id="l14" class="s5" d="M37 -12v12" />
+									<g id="g1330" class="po" data-id="334">
+										<path id="p46" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp46">
+											<use xlink:href="#p46" />
+										</clipPath>
+										<g id="g1522" clip-path="url(#cp46)">
+											<image id="i21" xlink:href="./nozhenko.vf.html.files/img/i21.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t74" class="s10" x="12" y="113">Ноженко</text>
+											<text id="t75" class="s10" x="19" y="127">Софья</text>
+											<text id="t76" class="s10" x="23" y="141">2013</text>
+										</g>
+										<path id="p47" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1355" transform="translate(116,2007)">
+							<g id="g1356">
+								<g id="g1357">
+									<path id="l31" class="s5" d="M38 135v88" />
+									<g id="g1358" class="po" data-id="552">
+										<path id="p6" class="s0 sh" d="M0,0h76v135h-76Z" />
+										<g id="g1504">
+											<image id="i3" xlink:href="./nozhenko.vf.html.files/img/i3.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t11" class="s10" x="5" y="113">Константин</text>
+											<text id="t12" class="s10" x="24" y="127">? – ?</text>
+										</g>
+										<path id="p7" class="s1" d="M0,0h76v135h-76Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1351" transform="translate(103,2230)">
+							<g id="g1352">
+								<g id="g1353">
+									<path id="l25" class="s5" d="M51 149v62" />
+									<g id="g1354" class="po" data-id="155">
+										<path id="p8" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h83c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-83c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp8">
+											<use xlink:href="#p8" />
+										</clipPath>
+										<g id="g1505" clip-path="url(#cp8)">
+											<image id="i4" xlink:href="./nozhenko.vf.html.files/img/i4.jpeg" x="14" y="0" width="75" height="100" />
+											<text id="t13" class="s10" x="22" y="113">Анастасия</text>
+											<text id="t14" class="s10" x="5" y="127">Константиновна</text>
+											<text id="t15" class="s10" x="22" y="141">~1860 – ?</text>
+										</g>
+										<path id="p9" class="s1" d="M0,10c0,-5 5,-10 10,-10h83c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-83c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1367" transform="translate(231,2007)">
+							<g id="g1368">
+								<g id="g1369">
+									<path id="l38" class="s5" d="M37 149v74" />
+									<g id="g1370" class="po" data-id="200">
+										<path id="p12" class="s0 sh" d="M0,0h75v149h-75Z" />
+										<g id="g1507">
+											<image id="i6" xlink:href="./nozhenko.vf.html.files/img/i6.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t20" class="s10" x="5" y="113">Товстоконь</text>
+											<text id="t21" class="s10" x="20" y="127">Павел</text>
+											<text id="t22" class="s10" x="24" y="141">? – ?</text>
+										</g>
+										<path id="p13" class="s1" d="M0,0h75v149h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1363" transform="translate(228,2230)">
+							<g id="g1364">
+								<g id="g1365">
+									<path id="l34" class="s5" d="M40 163v48" />
+									<g id="g1366" class="po" data-id="93">
+										<path id="p14" class="s0 sh" d="M0,0h81v163h-81Z" />
+										<g id="g1508">
+											<image id="i7" xlink:href="./nozhenko.vf.html.files/img/i7.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t23" class="s10" x="8" y="113">Товстоконь</text>
+											<text id="t24" class="s10" x="20" y="127">Никита</text>
+											<text id="t25" class="s10" x="20" y="141">Павлов</text>
+											<text id="t26" class="s10" x="5" y="155">1863 – 1909</text>
+										</g>
+										<path id="p15" class="s1" d="M0,0h81v163h-81Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1359" transform="translate(278,2453)">
+							<path id="l37" class="s5" d="M-10 -12h100" />
+							<g id="g1360">
+								<g id="g1361">
+									<path id="l36" class="s5" d="M42 -12v12" />
+									<path id="l21" class="s5" d="M42 177v48" />
+									<g id="g1362" class="po" data-id="11">
+										<path id="p16" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h64c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-64c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp16">
+											<use xlink:href="#p16" />
+										</clipPath>
+										<g id="g1509" clip-path="url(#cp16)">
+											<image id="i8" xlink:href="./nozhenko.vf.html.files/img/i8.jpeg" x="4" y="0" width="75" height="100" />
+											<text id="t27" class="s10" x="17" y="113">Ноженко</text>
+											<text id="t28" class="s10" x="5" y="127">(Товстоконь)</text>
+											<text id="t29" class="s10" x="28" y="141">Анна</text>
+											<text id="t30" class="s10" x="11" y="155">Никитовна</text>
+											<text id="t31" class="s10" x="6" y="169">1888 – 1972</text>
+										</g>
+										<path id="p17" class="s1" d="M0,10c0,-5 5,-10 10,-10h64c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-64c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1375" transform="translate(331,2007)">
+							<g id="g1376">
+								<g id="g1377">
+									<path id="l41" class="s5" d="M37 135v88" />
+									<g id="g1378" class="po" data-id="553">
+										<path id="p18" class="s0 sh" d="M0,0h75v135h-75Z" />
+										<g id="g1510">
+											<image id="i9" xlink:href="./nozhenko.vf.html.files/img/i9.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t32" class="s10" x="13" y="113">Василий</text>
+											<text id="t33" class="s10" x="24" y="127">? – ?</text>
+										</g>
+										<path id="p19" class="s1" d="M0,0h75v135h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1371" transform="translate(331,2230)">
+							<g id="g1372">
+								<g id="g1373">
+									<path id="l35" class="s5" d="M37 163v48" />
+									<g id="g1374" class="po" data-id="287">
+										<path id="p20" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp20">
+											<use xlink:href="#p20" />
+										</clipPath>
+										<g id="g1511" clip-path="url(#cp20)">
+											<image id="i10" xlink:href="./nozhenko.vf.html.files/img/i10.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t34" class="s10" x="5" y="113">Товстоконь</text>
+											<text id="t35" class="s10" x="17" y="127">Ульяна</text>
+											<text id="t36" class="s10" x="7" y="141">Васильева</text>
+											<text id="t37" class="s10" x="13" y="155">1873 – ?</text>
+										</g>
+										<path id="p21" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1415" transform="translate(65,641)">
+							<g id="g1416">
+								<g id="g1417">
+									<path id="l76" class="s5" d="M37 149v62" />
+									<g id="g1418" class="po" data-id="1856">
+										<path id="p48" class="s0 sh" d="M0,0h75v149h-75Z" />
+										<g id="g1523">
+											<image id="i22" xlink:href="./nozhenko.vf.html.files/img/i22.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t77" class="s10" x="8" y="113">Чюрманов</text>
+											<text id="t78" class="s10" x="24" y="127">Петр</text>
+											<text id="t79" class="s10" x="13" y="141">1660 – ?</text>
+										</g>
+										<path id="p49" class="s1" d="M0,0h75v149h-75Z" />
+									</g>
+								</g>
+								<g id="g1419" transform="translate(97,0)">
+									<path id="l77" class="s5" d="M37 163v48" />
+									<g id="g1420" class="po" data-id="1854">
+										<path id="p50" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp50">
+											<use xlink:href="#p50" />
+										</clipPath>
+										<g id="g1524" clip-path="url(#cp50)">
+											<image id="i23" xlink:href="./nozhenko.vf.html.files/img/i23.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t80" class="s10" x="5" y="113">Чюрманова</text>
+											<text id="t81" class="s10" x="10" y="127">Гликерия</text>
+											<text id="t82" class="s10" x="6" y="141">Михайлова</text>
+											<text id="t83" class="s10" x="13" y="155">1660 – ?</text>
+										</g>
+										<path id="p51" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1411" transform="translate(113,864)">
+							<path id="l79" class="s5" d="M-11 -12h97" />
+							<g id="g1412">
+								<g id="g1413">
+									<path id="l78" class="s5" d="M37 -12v12" />
+									<path id="l72" class="s5" d="M37 163v48" />
+									<g id="g1414" class="po" data-id="1850">
+										<path id="p52" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1525">
+											<image id="i24" xlink:href="./nozhenko.vf.html.files/img/i24.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t84" class="s10" x="8" y="113">Чюрманов</text>
+											<text id="t85" class="s10" x="20" y="127">Сидор</text>
+											<text id="t86" class="s10" x="17" y="141">Петров</text>
+											<text id="t87" class="s10" x="13" y="155">1690 – ?</text>
+										</g>
+										<path id="p53" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+								<g id="g1421" transform="translate(97,0)">
+									<path id="l73" class="s5" d="M44 163v48" />
+									<g id="g1422" class="po" data-id="1851">
+										<path id="p54" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h69c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-69c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp54">
+											<use xlink:href="#p54" />
+										</clipPath>
+										<g id="g1526" clip-path="url(#cp54)">
+											<image id="i25" xlink:href="./nozhenko.vf.html.files/img/i25.jpeg" x="7" y="0" width="75" height="100" />
+											<text id="t88" class="s10" x="12" y="113">Чюрманова</text>
+											<text id="t89" class="s10" x="23" y="127">Федора</text>
+											<text id="t90" class="s10" x="5" y="141">Галактионова</text>
+											<text id="t91" class="s10" x="20" y="155">1690 – ?</text>
+										</g>
+										<path id="p55" class="s1" d="M0,10c0,-5 5,-10 10,-10h69c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-69c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1407" transform="translate(165,1087)">
+							<path id="l75" class="s5" d="M-15 -12h104" />
+							<g id="g1408">
+								<g id="g1409">
+									<path id="l74" class="s5" d="M37 -12v12" />
+									<path id="l68" class="s5" d="M37 163v62" />
+									<g id="g1410" class="po" data-id="1849">
+										<path id="p56" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1527">
+											<image id="i26" xlink:href="./nozhenko.vf.html.files/img/i26.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t92" class="s10" x="8" y="113">Чюрманов</text>
+											<text id="t93" class="s10" x="24" y="127">Петр</text>
+											<text id="t94" class="s10" x="13" y="141">Сидоров</text>
+											<text id="t95" class="s10" x="24" y="155">? – ?</text>
+										</g>
+										<path id="p57" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+								<g id="g1423" transform="translate(97,0)">
+									<path id="l69" class="s5" d="M37 163v62" />
+									<g id="g1424" class="po" data-id="1859">
+										<path id="p58" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp58">
+											<use xlink:href="#p58" />
+										</clipPath>
+										<g id="g1528" clip-path="url(#cp58)">
+											<image id="i27" xlink:href="./nozhenko.vf.html.files/img/i27.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t96" class="s10" x="5" y="113">Чюрманова</text>
+											<text id="t97" class="s10" x="11" y="127">Настасья</text>
+											<text id="t98" class="s10" x="10" y="141">Семенова</text>
+											<text id="t99" class="s10" x="13" y="155">1730 – ?</text>
+										</g>
+										<path id="p59" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1403" transform="translate(210,1324)">
+							<path id="l71" class="s5" d="M-8 -12h97" />
+							<g id="g1404">
+								<g id="g1405">
+									<path id="l70" class="s5" d="M40 -12v12" />
+									<path id="l64" class="s5" d="M40 163v48" />
+									<g id="g1406" class="po" data-id="1848">
+										<path id="p60" class="s0 sh" d="M0,0h81v163h-81Z" />
+										<g id="g1529">
+											<image id="i28" xlink:href="./nozhenko.vf.html.files/img/i28.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t100" class="s10" x="11" y="113">Чюрманов</text>
+											<text id="t101" class="s10" x="18" y="127">Панфил</text>
+											<text id="t102" class="s10" x="20" y="141">Петров</text>
+											<text id="t103" class="s10" x="5" y="155">1768 – 1833</text>
+										</g>
+										<path id="p61" class="s1" d="M0,0h81v163h-81Z" />
+									</g>
+								</g>
+								<g id="g1425" transform="translate(103,0)">
+									<path id="l65" class="s5" d="M37 163v48" />
+									<g id="g1426" class="po" data-id="1919">
+										<path id="p62" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp62">
+											<use xlink:href="#p62" />
+										</clipPath>
+										<g id="g1530" clip-path="url(#cp62)">
+											<image id="i29" xlink:href="./nozhenko.vf.html.files/img/i29.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t104" class="s10" x="5" y="113">Чюрманова</text>
+											<text id="t105" class="s10" x="18" y="127">Марфа</text>
+											<text id="t106" class="s10" x="6" y="141">Самойлова</text>
+											<text id="t107" class="s10" x="13" y="155">1767 – ?</text>
+										</g>
+										<path id="p63" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1399" transform="translate(263,1547)">
+							<path id="l67" class="s5" d="M-13 -12h100" />
+							<g id="g1400">
+								<g id="g1401">
+									<path id="l66" class="s5" d="M37 -12v12" />
+									<path id="l60" class="s5" d="M37 163v48" />
+									<g id="g1402" class="po" data-id="1521">
+										<path id="p64" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1531">
+											<image id="i30" xlink:href="./nozhenko.vf.html.files/img/i30.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t108" class="s10" x="9" y="113">Чурманов</text>
+											<text id="t109" class="s10" x="16" y="127">Ларион</text>
+											<text id="t110" class="s10" x="8" y="141">Панфилов</text>
+											<text id="t111" class="s10" x="13" y="155">1805 – ?</text>
+										</g>
+										<path id="p65" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+								<g id="g1427" transform="translate(97,0)">
+									<path id="l61" class="s5" d="M37 163v48" />
+									<g id="g1428" class="po" data-id="1540">
+										<path id="p66" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp66">
+											<use xlink:href="#p66" />
+										</clipPath>
+										<g id="g1532" clip-path="url(#cp66)">
+											<image id="i31" xlink:href="./nozhenko.vf.html.files/img/i31.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t112" class="s10" x="6" y="113">Чурманова</text>
+											<text id="t113" class="s10" x="11" y="127">Настасья</text>
+											<text id="t114" class="s10" x="10" y="141">Семенова</text>
+											<text id="t115" class="s10" x="13" y="155">1804 – ?</text>
+										</g>
+										<path id="p67" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1395" transform="translate(311,1770)">
+							<path id="l63" class="s5" d="M-11 -12h97" />
+							<g id="g1396">
+								<path id="l57" class="s5" d="M154 81v156" />
+								<path id="l56" class="s6" d="M75 81h159" />
+								<g id="g1397">
+									<path id="l62" class="s5" d="M37 -12v12" />
+									<g id="g1398" class="po" data-id="88">
+										<path id="p68" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1533">
+											<image id="i32" xlink:href="./nozhenko.vf.html.files/img/i32.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t116" class="s10" x="9" y="113">Чурманов</text>
+											<text id="t117" class="s10" x="19" y="127">Марко</text>
+											<text id="t118" class="s10" x="10" y="141">Ларионов</text>
+											<text id="t119" class="s10" x="13" y="155">1828 – ?</text>
+										</g>
+										<path id="p69" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1391" transform="translate(428,2007)">
+							<g id="g1392">
+								<g id="g1393">
+									<path id="l52" class="s5" d="M37 163v48" />
+									<g id="g1394" class="po" data-id="66">
+										<path id="p70" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1534">
+											<image id="i33" xlink:href="./nozhenko.vf.html.files/img/i33.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t120" class="s10" x="9" y="113">Чурманов</text>
+											<text id="t121" class="s10" x="17" y="127">Никита</text>
+											<text id="t122" class="s10" x="16" y="141">Марков</text>
+											<text id="t123" class="s10" x="13" y="155">1853 – ?</text>
+										</g>
+										<path id="p71" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+								<g id="g1485" transform="translate(97,0)">
+									<path id="l53" class="s5" d="M38 135v76" />
+									<g id="g1486" class="po" data-id="267">
+										<path id="p72" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h57c5,0 10,5 10,10v115c0,5 -5,10 -10,10h-57c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp72">
+											<use xlink:href="#p72" />
+										</clipPath>
+										<g id="g1535" clip-path="url(#cp72)">
+											<image id="i34" xlink:href="./nozhenko.vf.html.files/img/i34.jpeg" x="1" y="0" width="75" height="100" />
+											<text id="t124" class="s10" x="5" y="113">Порасковья</text>
+											<text id="t125" class="s10" x="9" y="127">~1857 – ?</text>
+										</g>
+										<path id="p73" class="s1" d="M0,10c0,-5 5,-10 10,-10h57c5,0 10,5 10,10v115c0,5 -5,10 -10,10h-57c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1387" transform="translate(477,2230)">
+							<path id="l55" class="s5" d="M-12 -12h98" />
+							<g id="g1388">
+								<g id="g1389">
+									<path id="l54" class="s5" d="M37 -12v12" />
+									<path id="l48" class="s5" d="M37 163v48" />
+									<g id="g1390" class="po" data-id="23">
+										<path id="p74" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1536">
+											<image id="i35" xlink:href="./nozhenko.vf.html.files/img/i35.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t126" class="s10" x="9" y="113">Чурманов</text>
+											<text id="t127" class="s10" x="24" y="127">Петр</text>
+											<text id="t128" class="s10" x="13" y="141">Никитич</text>
+											<text id="t129" class="s10" x="13" y="155">1875 – ?</text>
+										</g>
+										<path id="p75" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+								<g id="g1487" transform="translate(97,0)">
+									<path id="l49" class="s5" d="M38 135v76" />
+									<g id="g1488" class="po" data-id="266">
+										<path id="p76" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h57c5,0 10,5 10,10v115c0,5 -5,10 -10,10h-57c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp76">
+											<use xlink:href="#p76" />
+										</clipPath>
+										<g id="g1537" clip-path="url(#cp76)">
+											<image id="i36" xlink:href="./nozhenko.vf.html.files/img/i36.jpeg" x="1" y="0" width="75" height="100" />
+											<text id="t130" class="s10" x="5" y="113">Александра</text>
+											<text id="t131" class="s10" x="14" y="127">1875 – ?</text>
+										</g>
+										<path id="p77" class="s1" d="M0,10c0,-5 5,-10 10,-10h57c5,0 10,5 10,10v115c0,5 -5,10 -10,10h-57c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1383" transform="translate(526,2453)">
+							<path id="l51" class="s5" d="M-12 -12h98" />
+							<g id="g1384">
+								<path id="l45" class="s5" d="M133 81v156" />
+								<path id="l44" class="s6" d="M75 81h117" />
+								<g id="g1385">
+									<path id="l50" class="s5" d="M37 -12v12" />
+									<g id="g1386" class="po" data-id="13">
+										<path id="p78" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1538">
+											<image id="i37" xlink:href="./nozhenko.vf.html.files/img/i37.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t132" class="s10" x="9" y="113">Чурманов</text>
+											<text id="t133" class="s10" x="17" y="127">Нестер</text>
+											<text id="t134" class="s10" x="10" y="141">Петрович</text>
+											<text id="t135" class="s10" x="13" y="155">1906 – ?</text>
+										</g>
+										<path id="p79" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1379" transform="translate(619,2690)">
+							<g id="g1380">
+								<g id="g1381">
+									<path id="l17" class="s5" d="M40 163v48" />
+									<g id="g1382" class="po" data-id="10">
+										<path id="p112" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h61c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-61c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp112">
+											<use xlink:href="#p112" />
+										</clipPath>
+										<g id="g1555" clip-path="url(#cp112)">
+											<image id="i54" xlink:href="./nozhenko.vf.html.files/img/i54.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t195" class="s10" x="9" y="113">Чурманова</text>
+											<text id="t196" class="s10" x="18" y="127">Устинья</text>
+											<text id="t197" class="s10" x="7" y="141">Нестеровна</text>
+											<text id="t198" class="s10" x="5" y="155">1927 – 2012</text>
+										</g>
+										<path id="p113" class="s1" d="M0,10c0,-5 5,-10 10,-10h61c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-61c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1449" transform="translate(269,641)">
+							<g id="g1450">
+								<g id="g1451">
+									<path id="l96" class="s5" d="M41 163v48" />
+									<g id="g1452" class="po" data-id="1531">
+										<path id="p80" class="s0 sh" d="M0,0h82v163h-82Z" />
+										<g id="g1539">
+											<image id="i38" xlink:href="./nozhenko.vf.html.files/img/i38.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t136" class="s10" x="5" y="113">Ядришников</text>
+											<text id="t137" class="s10" x="26" y="127">Осип</text>
+											<text id="t138" class="s10" x="14" y="141">Васильев</text>
+											<text id="t139" class="s10" x="16" y="155">1660 – ?</text>
+										</g>
+										<path id="p81" class="s1" d="M0,0h82v163h-82Z" />
+									</g>
+								</g>
+								<g id="g1453" transform="translate(104,0)">
+									<path id="l97" class="s5" d="M41 149v62" />
+									<g id="g1454" class="po" data-id="1533">
+										<path id="p82" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h62c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-62c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp82">
+											<use xlink:href="#p82" />
+										</clipPath>
+										<g id="g1540" clip-path="url(#cp82)">
+											<image id="i39" xlink:href="./nozhenko.vf.html.files/img/i39.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t140" class="s10" x="5" y="113">Ядришников</text>
+											<text id="t141" class="s10" x="9" y="127">Маремьяна</text>
+											<text id="t142" class="s10" x="16" y="141">1662 – ?</text>
+										</g>
+										<path id="p83" class="s1" d="M0,10c0,-5 5,-10 10,-10h62c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-62c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1445" transform="translate(321,864)">
+							<path id="l99" class="s5" d="M-11 -12h104" />
+							<g id="g1446">
+								<path id="l93" class="s5" d="M93 74v149" />
+								<path id="l92" class="s6" d="M82 74h22" />
+								<g id="g1447">
+									<path id="l98" class="s5" d="M41 -12v12" />
+									<g id="g1448" class="po" data-id="1530">
+										<path id="p84" class="s0 sh" d="M0,0h82v163h-82Z" />
+										<g id="g1541">
+											<image id="i40" xlink:href="./nozhenko.vf.html.files/img/i40.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t143" class="s10" x="5" y="113">Ядришников</text>
+											<text id="t144" class="s10" x="23" y="127">Макар</text>
+											<text id="t145" class="s10" x="20" y="141">Осипов</text>
+											<text id="t146" class="s10" x="16" y="155">1680 – ?</text>
+										</g>
+										<path id="p85" class="s1" d="M0,0h82v163h-82Z" />
+									</g>
+								</g>
+								<g id="g1455" transform="translate(104,0)">
+									<g id="g1456" class="po" data-id="1532">
+										<path id="p86" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h69c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-69c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp86">
+											<use xlink:href="#p86" />
+										</clipPath>
+										<g id="g1542" clip-path="url(#cp86)">
+											<image id="i41" xlink:href="./nozhenko.vf.html.files/img/i41.jpeg" x="7" y="0" width="75" height="100" />
+											<text id="t147" class="s10" x="5" y="113">Ядришникова</text>
+											<text id="t148" class="s10" x="26" y="127">Орина</text>
+											<text id="t149" class="s10" x="20" y="141">1680 – ?</text>
+										</g>
+										<path id="p87" class="s1" d="M0,10c0,-5 5,-10 10,-10h69c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-69c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1441" transform="translate(373,1087)">
+							<g id="g1442">
+								<g id="g1443">
+									<path id="l88" class="s5" d="M41 163v62" />
+									<g id="g1444" class="po" data-id="1525">
+										<path id="p88" class="s0 sh" d="M0,0h82v163h-82Z" />
+										<g id="g1543">
+											<image id="i42" xlink:href="./nozhenko.vf.html.files/img/i42.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t150" class="s10" x="5" y="113">Ядришников</text>
+											<text id="t151" class="s10" x="21" y="127">Сергей</text>
+											<text id="t152" class="s10" x="16" y="141">Макаров</text>
+											<text id="t153" class="s10" x="16" y="155">1722 – ?</text>
+										</g>
+										<path id="p89" class="s1" d="M0,0h82v163h-82Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1437" transform="translate(449,1324)">
+							<path id="l91" class="s5" d="M-35 -12h159" />
+							<g id="g1438">
+								<path id="l85" class="s5" d="M93 74v149" />
+								<path id="l84" class="s6" d="M82 74h22" />
+								<g id="g1439">
+									<path id="l90" class="s5" d="M41 -12v12" />
+									<g id="g1440" class="po" data-id="1524">
+										<path id="p90" class="s0 sh" d="M0,0h82v163h-82Z" />
+										<g id="g1544">
+											<image id="i43" xlink:href="./nozhenko.vf.html.files/img/i43.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t154" class="s10" x="5" y="113">Ядришников</text>
+											<text id="t155" class="s10" x="19" y="127">Максим</text>
+											<text id="t156" class="s10" x="18" y="141">Сергеев</text>
+											<text id="t157" class="s10" x="16" y="155">1757 – ?</text>
+										</g>
+										<path id="p91" class="s1" d="M0,0h82v163h-82Z" />
+									</g>
+								</g>
+								<g id="g1481" transform="translate(104,0)">
+									<g id="g1482" class="po" data-id="1534">
+										<path id="p92" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp92">
+											<use xlink:href="#p92" />
+										</clipPath>
+										<g id="g1545" clip-path="url(#cp92)">
+											<image id="i44" xlink:href="./nozhenko.vf.html.files/img/i44.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t158" class="s10" x="14" y="113">Лукерья</text>
+											<text id="t159" class="s10" x="7" y="127">Васильева</text>
+											<text id="t160" class="s10" x="13" y="141">1754 – ?</text>
+										</g>
+										<path id="p93" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v129c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1433" transform="translate(501,1547)">
+							<g id="g1434">
+								<path id="l81" class="s5" d="M93 67v156" />
+								<path id="l80" class="s6" d="M82 67h22" />
+								<g id="g1435">
+									<g id="g1436" class="po" data-id="1523">
+										<path id="p94" class="s0 sh" d="M0,0h82v163h-82Z" />
+										<g id="g1546">
+											<image id="i45" xlink:href="./nozhenko.vf.html.files/img/i45.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t161" class="s10" x="5" y="113">Ядришников</text>
+											<text id="t162" class="s10" x="19" y="127">Стефан</text>
+											<text id="t163" class="s10" x="13" y="141">Максимов</text>
+											<text id="t164" class="s10" x="16" y="155">1802 – ?</text>
+										</g>
+										<path id="p95" class="s1" d="M0,0h82v163h-82Z" />
+									</g>
+								</g>
+								<g id="g1483" transform="translate(104,0)">
+									<g id="g1484" class="po" data-id="1535">
+										<path id="p96" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h57c5,0 10,5 10,10v115c0,5 -5,10 -10,10h-57c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp96">
+											<use xlink:href="#p96" />
+										</clipPath>
+										<g id="g1547" clip-path="url(#cp96)">
+											<image id="i46" xlink:href="./nozhenko.vf.html.files/img/i46.jpeg" x="1" y="0" width="75" height="100" />
+											<text id="t165" class="s10" x="5" y="113">Парасковья</text>
+											<text id="t166" class="s10" x="14" y="127">1804 – ?</text>
+										</g>
+										<path id="p97" class="s1" d="M0,10c0,-5 5,-10 10,-10h57c5,0 10,5 10,10v115c0,5 -5,10 -10,10h-57c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1429" transform="translate(545,1770)">
+							<g id="g1430">
+								<g id="g1431">
+									<g id="g1432" class="po" data-id="1522">
+										<path id="p98" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h79c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-79c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp98">
+											<use xlink:href="#p98" />
+										</clipPath>
+										<g id="g1548" clip-path="url(#cp98)">
+											<image id="i47" xlink:href="./nozhenko.vf.html.files/img/i47.jpeg" x="12" y="0" width="75" height="100" />
+											<text id="t167" class="s10" x="18" y="113">Чурманова</text>
+											<text id="t168" class="s10" x="5" y="127">(Ядришникова)</text>
+											<text id="t169" class="s10" x="26" y="141">Евдокия</text>
+											<text id="t170" class="s10" x="18" y="155">Стефанова</text>
+											<text id="t171" class="s10" x="25" y="169">1830 – ?</text>
+										</g>
+										<path id="p99" class="s1" d="M0,10c0,-5 5,-10 10,-10h79c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-79c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1477" transform="translate(536,0)">
+							<g id="g1478">
+								<g id="g1479">
+									<path id="l112" class="s5" d="M37 149v60" />
+									<g id="g1480" class="po" data-id="1796">
+										<path id="p100" class="s0 sh" d="M0,0h75v149h-75Z" />
+										<g id="g1549">
+											<image id="i48" xlink:href="./nozhenko.vf.html.files/img/i48.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t172" class="s10" x="10" y="113">Шимолин</text>
+											<text id="t173" class="s10" x="21" y="127">Некто</text>
+											<text id="t174" class="s10" x="13" y="141">1610 – ?</text>
+										</g>
+										<path id="p101" class="s1" d="M0,0h75v149h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1473" transform="translate(536,209)">
+							<g id="g1474">
+								<g id="g1475">
+									<path id="l109" class="s5" d="M37 149v60" />
+									<g id="g1476" class="po" data-id="1795">
+										<path id="p102" class="s0 sh" d="M0,0h75v149h-75Z" />
+										<g id="g1550">
+											<image id="i49" xlink:href="./nozhenko.vf.html.files/img/i49.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t175" class="s10" x="10" y="113">Шимолин</text>
+											<text id="t176" class="s10" x="13" y="127">Федосей</text>
+											<text id="t177" class="s10" x="24" y="141">? – ?</text>
+										</g>
+										<path id="p103" class="s1" d="M0,0h75v149h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1469" transform="translate(536,418)">
+							<g id="g1470">
+								<g id="g1471">
+									<path id="l106" class="s5" d="M37 163v60" />
+									<g id="g1472" class="po" data-id="1529">
+										<path id="p104" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1551">
+											<image id="i50" xlink:href="./nozhenko.vf.html.files/img/i50.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t178" class="s10" x="10" y="113">Шимолин</text>
+											<text id="t179" class="s10" x="16" y="127">Микита</text>
+											<text id="t180" class="s10" x="10" y="141">Федосеев</text>
+											<text id="t181" class="s10" x="13" y="155">1660 – ?</text>
+										</g>
+										<path id="p105" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1465" transform="translate(536,641)">
+							<g id="g1466">
+								<g id="g1467">
+									<path id="l103" class="s5" d="M37 163v60" />
+									<g id="g1468" class="po" data-id="1528">
+										<path id="p106" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1552">
+											<image id="i51" xlink:href="./nozhenko.vf.html.files/img/i51.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t182" class="s10" x="10" y="113">Шимолин</text>
+											<text id="t183" class="s10" x="24" y="127">Петр</text>
+											<text id="t184" class="s10" x="13" y="141">Микитов</text>
+											<text id="t185" class="s10" x="13" y="155">1690 – ?</text>
+										</g>
+										<path id="p107" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1461" transform="translate(536,864)">
+							<g id="g1462">
+								<g id="g1463">
+									<path id="l100" class="s5" d="M37 163v60" />
+									<g id="g1464" class="po" data-id="1527">
+										<path id="p108" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1553">
+											<image id="i52" xlink:href="./nozhenko.vf.html.files/img/i52.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t186" class="s10" x="10" y="113">Шимолин</text>
+											<text id="t187" class="s10" x="8" y="127">Селивестр</text>
+											<text id="t188" class="s10" x="17" y="141">Петров</text>
+											<text id="t189" class="s10" x="13" y="155">1707 – ?</text>
+										</g>
+										<path id="p109" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1457" transform="translate(525,1087)">
+							<g id="g1458">
+								<g id="g1459">
+									<path id="l89" class="s5" d="M48 177v48" />
+									<g id="g1460" class="po" data-id="1526">
+										<path id="p110" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h76c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-76c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp110">
+											<use xlink:href="#p110" />
+										</clipPath>
+										<g id="g1554" clip-path="url(#cp110)">
+											<image id="i53" xlink:href="./nozhenko.vf.html.files/img/i53.jpeg" x="10" y="0" width="75" height="100" />
+											<text id="t190" class="s10" x="8" y="113">Ядришникова</text>
+											<text id="t191" class="s10" x="13" y="127">(Шимолина)</text>
+											<text id="t192" class="s10" x="23" y="141">Акилина</text>
+											<text id="t193" class="s10" x="5" y="155">Силивесторова</text>
+											<text id="t194" class="s10" x="23" y="169">1727 – ?</text>
+										</g>
+										<path id="p111" class="s1" d="M0,10c0,-5 5,-10 10,-10h76c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-76c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1495" transform="translate(673,2230)">
+							<g id="g1496">
+								<g id="g1497">
+									<path id="l116" class="s5" d="M37 163v48" />
+									<g id="g1498" class="po" data-id="24">
+										<path id="p114" class="s0 sh" d="M0,0h75v163h-75Z" />
+										<g id="g1556">
+											<image id="i55" xlink:href="./nozhenko.vf.html.files/img/i55.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t199" class="s10" x="16" y="113">Наумов</text>
+											<text id="t200" class="s10" x="24" y="127">Егор</text>
+											<text id="t201" class="s10" x="16" y="141">Иванов</text>
+											<text id="t202" class="s10" x="24" y="155">? – ?</text>
+										</g>
+										<path id="p115" class="s1" d="M0,0h75v163h-75Z" />
+									</g>
+								</g>
+								<g id="g1499" transform="translate(97,0)">
+									<path id="l117" class="s5" d="M37 163v48" />
+									<g id="g1500" class="po" data-id="2336">
+										<path id="p116" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp116">
+											<use xlink:href="#p116" />
+										</clipPath>
+										<g id="g1557" clip-path="url(#cp116)">
+											<image id="i56" xlink:href="./nozhenko.vf.html.files/img/i56.jpeg" x="0" y="0" width="75" height="100" />
+											<text id="t203" class="s10" x="13" y="113">Наумова</text>
+											<text id="t204" class="s10" x="17" y="127">Ульяна</text>
+											<text id="t205" class="s10" x="10" y="141">Яковлева</text>
+											<text id="t206" class="s10" x="24" y="155">? – ?</text>
+										</g>
+										<path id="p117" class="s1" d="M0,10c0,-5 5,-10 10,-10h55c5,0 10,5 10,10v143c0,5 -5,10 -10,10h-55c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="g1489" transform="translate(718,2453)">
+							<path id="l119" class="s5" d="M-8 -12h97" />
+							<g id="g1490">
+								<path id="l115" class="s6" d="M81 67h22" />
+								<g id="g1491">
+									<path id="l118" class="s5" d="M40 -12v12" />
+									<g id="g1492" class="po" data-id="14">
+										<path id="p118" class="s2 sh" d="M0,10c0,-5 5,-10 10,-10h61c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-61c-5,0 -10,-5 -10,-10Z" />
+										<clipPath id="cp118">
+											<use xlink:href="#p118" />
+										</clipPath>
+										<g id="g1558" clip-path="url(#cp118)">
+											<image id="i57" xlink:href="./nozhenko.vf.html.files/img/i57.jpeg" x="3" y="0" width="75" height="100" />
+											<text id="t207" class="s10" x="12" y="113">Чурманов</text>
+											<text id="t208" class="s10" x="11" y="127">(Наумова)</text>
+											<text id="t209" class="s10" x="17" y="141">Наталья</text>
+											<text id="t210" class="s10" x="14" y="155">Егоровна</text>
+											<text id="t211" class="s10" x="5" y="169">1909 – 1988</text>
+										</g>
+										<path id="p119" class="s1" d="M0,10c0,-5 5,-10 10,-10h61c5,0 10,5 10,10v157c0,5 -5,10 -10,10h-61c-5,0 -10,-5 -10,-10Z" />
+									</g>
+								</g>
+								<g id="g1493" transform="translate(103,0)">
+									<g id="g1494" class="po" data-id="432">
+										<path id="p120" class="s0 sh" d="M0,0h79v135h-79Z" />
+										<g id="g1559">
+											<image id="i58" xlink:href="./nozhenko.vf.html.files/img/i58.jpeg" x="2" y="0" width="75" height="100" />
+											<text id="t212" class="s10" x="5" y="113">Дмитриенко</text>
+											<text id="t213" class="s10" x="19" y="127">Степан</text>
+										</g>
+										<path id="p121" class="s1" d="M0,0h79v135h-79Z" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+			<script type="text/javascript">//<![CDATA[
+navTo = function() {
+	if (this.dataset.link.match(/^(?!https?:\/\/).+?\.html?$/i))
+		window.location.href = this.dataset.link;
+	else
+		window.open(this.dataset.link, '_blank');
+};
+var a = document.querySelectorAll('[data-link]');
+for(var i = 0; i < a.length; i++) a[i].addEventListener('click', navTo);
+a = undefined;
+function scrollToView(e){
+	if(typeof e.scrollIntoView != 'undefined')
+        e.scrollIntoView({block: "center", inline: "center"});
+	else
+	{
+		var r = e.getBoundingClientRect()
+		window.scrollTo({ top: window.pageYOffset + r.top - window.innerHeight / 2, left: window.pageXOffset + r.left - window.innerWidth / 2})
+	}
+}
+function scrollToViewTop(e){
+	if(typeof e.scrollIntoView != 'undefined')
+        e.scrollIntoView(true);
+	else{
+		var r = e.getBoundingClientRect()
+		window.scrollTo({ top: window.pageYOffset + r.top})
+	}
+}
+jumpTo = function(){ var e = document.getElementById(this.dataset.ref); e && scrollToView(e); }
+jumpToTop = function(){ var e = document.getElementById(this.dataset.ref); e && scrollToViewTop(e); }
+var _tmp;
+a = document.querySelectorAll('[data-ref]');
+for(var i = 0; i < a.length; i++){
+	if( a[i].dataset.ref.match( /^[0-9]/ ) ) {
+		_tmp = document.querySelector('[data-id="' + a[i].dataset.ref + '"]')
+		if(_tmp){
+            a[i].dataset.ref = _tmp.id;
+		    a[i].addEventListener('click', jumpToTop);
+        }
+	}else {
+		a[i].addEventListener('click', jumpTo);
+	}
+}
+a = undefined;
+
+window.addEventListener('DOMContentLoaded', function(){
+	var svg = document.getElementById('svg0');
+	var e = document.getElementById(svg.dataset.root);
+	e && scrollToView(e);
+});
+var p = null;
+function startDrag(e, x, y) {
+	if(!e.ctrlKey) return;
+	p = { x: x, y: y }
+}
+function endDrag(e) {
+	p = null;
+}
+function onMove(e, x, y) {
+	if(p) {
+		if(!e.ctrlKey){
+			p = null;
+		} else {
+			window.scrollTo({
+				top: window.pageYOffset-(y-p.y),
+				left: window.pageXOffset-(x-p.x)
+			})
+			e.preventDefault();
+		}
+	}
+}
+document.addEventListener('mouseup', endDrag, false );
+document.addEventListener('mousedown', function(e){ startDrag(e, e.pageX, e.pageY) }, false );
+document.addEventListener('mousemove', function(e){ onMove(e, e.pageX, e.pageY) }, false );
+var currpos = 0;
+var currgid = 0;
+var modal,mc,mcw;
+function updateModalHeight(fh) {
+	if(modal.clientHeight * 0.87 < fh + 40 ) {
+		mcw.style.height = '87%';
+		mc.style.height = '98%';
+	}else{
+		mcw.style.height = 'auto';
+		mc.style.height = fh + 40 + 'px';
+	}
+}
+window.addEventListener('DOMContentLoaded', function (){
+	modal = document.getElementById('myModal');
+	mc = document.getElementById('modalContent');
+	mcw = document.getElementById('modalContentWrap');
+	window.addEventListener('message', function (event) {
+		if (event.data.event_id === 'gmsg') currgid = event.data.data;
+		if (event.data.event_id === 'gclose') closemodal();
+		if (event.data.event_id === 'gheight') updateModalHeight(event.data.data);
+	});
+	window.addEventListener('keydown', function(e){ if( (e.keyCode && e.keyCode === 27) || ( e.code && e.code === "Escape") ) closemodal(); }, false );
+
+	var navToPerson = function () {
+		mc.innerHTML = '<iframe id="idetail" onload="currpos+=1;" src="nozhenko.vf.html.files/p' + this.dataset.id + '.html?v=1" class="modal-frame"></iframe>';
+		modal.style.display = 'block';
+	}
+	function closemodal() { modal.style.display = "none"; currpos = 0; }
+	var spanback = document.getElementsByClassName("back")[0];
+	spanback.onclick = function () { if (currpos > 1) { window.history.back(); currpos -= 2; } else closemodal(); }
+	var spanx = document.getElementsByClassName("close")[0];
+	spanx.onclick = closemodal;
+	var spantree = document.getElementsByClassName("tree")[0];
+	spantree.onclick = function () {
+		closemodal();
+		var elmnt = document.getElementById(currgid);
+		if( elmnt ) scrollToView(elmnt);
+	}
+	window.onclick = function (event) { if (event.target === modal) closemodal(); }
+	var a = document.querySelectorAll('[data-id]');
+	for(var i = 0; i < a.length; i++) a[i].addEventListener('click', navToPerson);
+	a = undefined;
+});
+//]]></script>
+		</svg>
+		<div id="myModal" class="modal">
+			<div class="modal-content" id="modalContentWrap">
+				<div class="gbtn back" title="Назад"></div>
+				<div class="gbtn tree" title="Перейти в древо"></div>
+				<span class="close">&times;</span>
+				<div id="modalContent"></div>
+			</div>
+		</div>
+	</body>
+</html>
